@@ -16,42 +16,6 @@
   }
 }
 
-ol {
-  list-style: none;
-  margin:0;
-  padding:0;
-  counter-reset: menu_item;
-}
-li {
-  margin: 0 0 0 0 ;
-  padding: 20px;
-  border: 0;
-  float : left
-}
-ol li a::before {
-  counter-increment: menu_item;
-  content: "0" counter(menu_item) ".";
-  margin-right: 5px;
-  color: var(--green);
-  font-size: var(--fz-xxs);
-  text-align: right;
-}
-
-ol li a {
-  cursor: pointer;
-  color: aliceblue;
-  font-size: 0.8rem;
-}
-.resume-btn {
-  height: 70%;
-  margin: 0 0 0 0 ;
-  padding: 0 20px ;
-  border: 2;
-  float: left;
-  background : transparent;
-  cursor: pointer
-}
-
 .App-header {
   display: flex;
   -webkit-box-pack: justify;
@@ -59,20 +23,9 @@ ol li a {
   align-items: center;
   padding : 0px 50px
 }
-nav {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  width: 100%;
-}
+
 .App-link {
   color: #61dafb;
-}
-.top-menu-wrap{
-  display: flex;
-  flex-direction: row;
-  justify-content: space-around;
-  align-items: center;
 }
 
 @keyframes App-logo-spin {
