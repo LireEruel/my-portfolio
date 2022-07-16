@@ -1,4 +1,4 @@
-import './App.css';
+import './assets/topbar.css';
 
 function Topbar () {
 
