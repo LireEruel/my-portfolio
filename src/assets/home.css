@@ -1,22 +1,19 @@
 
-#main {
+#home {
     height: 95vh;
     display: flex;
     align-items: flex-start;
-    justify-content: center;
     flex-direction: column;
     margin: 0px 20vw;
 }
 
-h1 {
+.greeting{
+    margin-top: 20vh;
     color : var(--green);
     font-size: 1.2rem;
     margin-left: 5px;
     animation-name: enter;
     animation-duration: 1s;
-    animation-duration: leaner;
-    animation-delay: 0.2s;
-
 }
 
 h2 {
@@ -30,13 +27,11 @@ h2 {
 
 .name {
     color : var(--gray-tint);
-    animation-delay: 0.4s;
 }
 
 .job {
     color : var(--light-gray-tint);
     margin-bottom: 2rem;
-    animation-delay: 0.6s;
 }
 
 p {
@@ -45,13 +40,14 @@ p {
     font-family: sans-serif;
     animation-name: enter;
     animation-duration: 1s;
-    animation-delay: 0.8s;
 }
 
 .contact-btn {
     font-size: large;
     animation-name: enter;
     animation-duration: 1s;
-    animation-delay: 1s;
 }
 
+.subInfo {
+    text-align: left;
+}
