@@ -10,22 +10,27 @@
   top: 0;
   z-index: 999;
   overflow: hidden;
-  background-color: var(--dark-gray);
+  background-color: var(--dark-gray); 
+  animation-name: enter;
+  animation-duration: 1s;
+  animation-duration: leaner;
 }
 ol {
   list-style: none;
   margin:0;
   padding:0;
   counter-reset: menu_item;
-  animation-name: enter;
-  animation-duration: 1s;
-  animation-duration: leaner;
+
+  width : 30vw
 }
 li {
   margin: 0 0 0 0 ;
   padding: 15px;
   border: 0;
-  float : left
+  float : left;
+  animation-name: enter;
+  animation-duration: 1s;
+  animation-duration: leaner;
 }
 ol li a::before {
   counter-increment: menu_item;
@@ -42,9 +47,10 @@ ol li a {
   font-size: 0.8rem;
 }
 .resume-btn {
+  position: absolute;
   height: 70%;
   margin: 0 0 0 0 ;
-  padding: 0.6rem 1rem 1rem 1rem;
+  padding: 1rem 1.2rem 1.2rem 1rem;
   border: 1px solid var(--green);
   float: left;
   color:var(--green);
@@ -52,7 +58,11 @@ ol li a {
   cursor: pointer;
   border-radius: 0.3rem;
   margin-left: 1vw;
-  margin-right: 2.5vw;
+  margin-right: 1vw;
+  animation-name: enter;
+  animation-duration: 1s;
+  animation-duration: leaner;
+  right: 0;
 }
 
 

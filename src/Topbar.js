@@ -1,29 +1,45 @@
-import './assets/topbar.css';
+import { Link } from "react-scroll";
+import "./assets/topbar.css";
 
-function Topbar ({step}) {
-  console.log(step)
-  const listItem = [ <li><a>About</a></li>,  <li><a>Experience</a></li>, <li><a>Work</a></li>, <li><a>Contact</a></li>]
+function Topbar({ step }) {
+  console.log(step);
+  const listItem = [
+    <li>
+      <Link
+        activeClass="active"
+        to="about"
+        spy={true}
+        smooth={true}
+        offset={-100}
+        duration={500}
+      >
+        About
+      </Link>
+    </li>,
+    <li>
+      <a>Experience</a>
+    </li>,
+    <li>
+      <a>Work</a>
+    </li>,
+    <li>
+      <a>Contact</a>
+    </li>,
+  ];
 
-    const renderListItem = () => {
+  const renderListItem = () => {
+    return listItem.slice(0, step);
+  };
 
-      return listItem.slice(0, step)
-    }
-
-
-    return (
-        <nav>
-        <div>
-      
-        </div>
-        <div className='top-menu-wrap'>
-          <ol>
-            {renderListItem()}
-          </ol>
-          <button className='resume-btn'>Resume</button>
-        </div>
-
-      </nav>
-    )
+  return (
+    <nav>
+      <div></div>
+      <div className="top-menu-wrap">
+        <ol>{renderListItem()}</ol>
+        {step > 4 ? <button className="resume-btn">Resume</button> : null}
+      </div>
+    </nav>
+  );
 }
 
-export default Topbar
+export default Topbar;
