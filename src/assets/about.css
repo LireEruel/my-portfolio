@@ -1,0 +1,22 @@
+#about {
+    height: 95vh;
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+    margin: 0px 20vw;
+}
+
+h1 {
+    color : var(--green);
+    font-size: 1.2rem;
+    margin-left: 5px;
+    animation-name: enter;
+    animation-duration: 1s;
+    animation-duration: leaner;
+    animation-delay: 0.2s;
+}
+
+span {
+    color : var(--gray-tint);
+    font-size: 2rem;
+}

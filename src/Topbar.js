@@ -1,21 +1,25 @@
 import './assets/topbar.css';
 
-function Topbar () {
+function Topbar ({step}) {
+  console.log(step)
+  const listItem = [ <li><a>About</a></li>,  <li><a>Experience</a></li>, <li><a>Work</a></li>, <li><a>Contact</a></li>]
+
+    const renderListItem = () => {
+
+      return listItem.slice(0, step)
+    }
 
 
     return (
         <nav>
         <div>
-          정서희
+      
         </div>
         <div className='top-menu-wrap'>
           <ol>
-            <li><a>About</a></li>
-            <li><a>Experience</a></li>
-            <li><a>Work</a></li>
-            <li><a>Contact</a></li>
+            {renderListItem()}
           </ol>
-          <button className='resume-btn'>resume</button>
+          <button className='resume-btn'>Resume</button>
         </div>
 
       </nav>
