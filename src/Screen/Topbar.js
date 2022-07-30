@@ -1,5 +1,5 @@
 import { Link } from "react-scroll";
-import "./assets/topbar.css";
+import "../assets/topbar.css";
 
 function Topbar({ step }) {
   console.log(step);

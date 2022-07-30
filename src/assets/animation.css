@@ -1,0 +1,37 @@
+
+#animation-view {
+    margin-top: 5vh;
+    height: 30vh;
+    width: 100%;
+    border-bottom: 1px solid white;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-end;
+}
+
+.ball {
+    position: relative;
+    width: 1vh;
+    height: 1vh;
+    border : 1px solid var(--green);
+    bottom: 2vh;
+    animation-name: moveBall;
+    animation-duration: 3s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+}
+
+.persion {
+    width: 2vh;
+    height: 3vh;
+    border : 1px solid var(--green);
+}
+
+@keyframes moveBall {
+    from {
+        left: 0%;
+    }
+    to {
+        left: 90%;
+    }
+}
