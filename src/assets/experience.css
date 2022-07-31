@@ -1,5 +1,5 @@
-#about {
-    height: 70vh;
+#experience {
+    height: 95vh;
     display: flex;
     align-items: flex-start;
     flex-direction: column;
@@ -16,44 +16,21 @@
     animation-delay: 0.2s;
 }
 
-#about span {
+#experience span {
     color : var(--gray-tint);
     font-size: 2rem;
 }
 
-#about p span {
+#experience p span {
     color : var(--gray-tint);
     font-size: 1.5rem;
 }
 
-#about p strong {
+#experience p strong {
     color : var(--gray-tint);
     font-size: 1.1rem
 }
 .inner-text {
     text-align: start;
     margin-right: 5vw;
-}
-
-.content {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-}
-.img-wrap img {
-    width: 10vw;
-}
-.img-wrap {
-    width: 10vw;
-    padding: 1vw;
-    border : 1px solid var(--green);
-    transition: all 0.1s;
-    opacity: 0.7;
-}
-
-.img-wrap:hover {
-    width: 10vw;
-    padding: 1vw - 4px;
-    border : 3px solid var(--green);
-    opacity: 1;
 }

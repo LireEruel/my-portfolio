@@ -17,11 +17,21 @@ function Topbar({ step }) {
       </Link>
     </li>,
     <li>
-      <a>Experience</a>
+      <Link
+        activeClass="active"
+        to="work"
+        spy={true}
+        smooth={true}
+        offset={-100}
+        duration={500}
+      >
+        Work
+      </Link>
     </li>,
     <li>
-      <a>Work</a>
+      <a>Experience</a>
     </li>,
+
     <li>
       <a>Contact</a>
     </li>,
