@@ -6,6 +6,8 @@ import About from "./Screen/About";
 import { useEffect, useState } from "react";
 import Experience from "./Screen/Experience";
 import Work from "./Screen/Work";
+import "animate.css/animate.min.css";
+import { AnimationOnScroll } from "react-animation-on-scroll";
 
 function App() {
   const [step, setStep] = useState(0);
@@ -29,9 +31,15 @@ function App() {
         <hr />
         <section id="contents">
           <Home step={step} />
-          <About step={step} />
-          <Work />
-          <Experience />
+          <AnimationOnScroll animateIn="animate__fadeIn">
+            <About step={step} />
+          </AnimationOnScroll>
+          <AnimationOnScroll animateIn="animate__fadeIn">
+            <Work />
+          </AnimationOnScroll>
+          <AnimationOnScroll animateIn="animate__fadeIn">
+            <Experience />
+          </AnimationOnScroll>
         </section>
         <hr />
       </div>
