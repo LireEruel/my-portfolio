@@ -1,0 +1,63 @@
+#work {
+    height: 95vh;
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+    margin: 0px 20vw;
+}
+
+#work h2 {
+    color: var(--gray-tint);
+    font-family: sans-serif
+}
+
+
+
+#work h3 {
+    color: var(--gray-tint);
+    font-family: sans-serif
+}
+
+
+.title {
+    color : var(--green);
+    font-size: 1.2rem;
+    margin-left: 5px;
+    animation-name: enter;
+    animation-duration: 1s;
+    animation-duration: leaner;
+    animation-delay: 0.2s;
+}
+.work-block {
+    text-align: start;
+}
+.title span {
+    color : var(--gray-tint);
+    font-size: 2rem;
+    font-family: var(--font-mono);
+}
+
+.span-date {
+    color: var(--green);
+    font-family: var(--font-mono);
+    font-size:1rem
+}
+
+#work p strong {
+    color : var(--gray-tint);
+    font-size: 1.1rem
+}
+.inner-text {
+    text-align: start;
+    margin-right: 5vw;
+}cd
+
+.work-info {
+    text-align: start;
+    color:var(--gray-tint)
+}
+
+#work p span {
+    color : var(--gray-tint);
+    font-weight: 600;
+}

@@ -4,6 +4,8 @@ import Home from "./Home";
 import Snowfall from "react-snowfall";
 import About from "./Screen/About";
 import { useEffect, useState } from "react";
+import Experience from "./Screen/Experience";
+import Work from "./Screen/Work";
 
 function App() {
   const [step, setStep] = useState(0);
@@ -28,6 +30,8 @@ function App() {
         <section id="contents">
           <Home step={step} />
           <About step={step} />
+          <Work />
+          <Experience />
         </section>
         <hr />
       </div>
