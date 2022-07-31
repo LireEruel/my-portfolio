@@ -2,9 +2,8 @@ import { Link } from "react-scroll";
 import "../assets/topbar.css";
 
 function Topbar({ step }) {
-  console.log(step);
   const listItem = [
-    <li>
+    <li key="about">
       <Link
         activeClass="active"
         to="about"
@@ -16,7 +15,7 @@ function Topbar({ step }) {
         About
       </Link>
     </li>,
-    <li>
+    <li key="work">
       <Link
         activeClass="active"
         to="work"
@@ -28,11 +27,11 @@ function Topbar({ step }) {
         Work
       </Link>
     </li>,
-    <li>
+    <li key="experience">
       <a>Experience</a>
     </li>,
 
-    <li>
+    <li key="contact">
       <a>Contact</a>
     </li>,
   ];
