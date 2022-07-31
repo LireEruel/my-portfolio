@@ -15,7 +15,6 @@ function App() {
     if (step < 20) {
       setTimeout(() => setStep(step + 1), 250);
     }
-    console.log(step);
   }, [step]);
 
   return (
