@@ -1,28 +1,80 @@
 
 .card {
-    background-color: var(--white);
     width: 15vw;
     height: 15vw;
     border-radius: 0.5vw;
+    font-family: var(--font-mono);
+    overflow: hidden;
+    min-width: 20em;
+    min-height: 20em;
+    display: flex;
+    cursor: pointer;
+}
+
+.card-content {
+    border-radius: 0.5vw;
+    background-color: var(--white);
+    min-width: 20em;
 }
 
 .card img {
     width: 15vw;
     height: 15vw;
+    min-width: 20em;
+    min-height: 20em;
     border-radius: 0.5vw;
     object-fit: cover;
 }
 
 .card h2 {
     margin : 0;
-    padding : 1vw
+    padding : 0.5vw;
+    font-size: 1.5rem;
+    font-family: sans-serif;
 }
 
+.card-content h5 {
+    text-align: left;
+    margin-left: 0.5vw;
+    margin-top: 0;
+    margin-bottom: 0;
+    font-family: sans-serif;
+}
 .card p {
+    margin: 0;
     color : black;
     display: -webkit-box;
     -webkit-line-clamp: 9 ;
     white-space: normal;
     -webkit-box-orient: vertical;
     overflow: hidden;
+    padding : 1vw;
+    font-size: small;
+}
+
+.contribution-ul {
+    list-style: none;
+    overflow: auto;
+}
+
+.stack-ul {
+    list-style: none;
+    overflow: auto;
+
+}
+
+.contribution-ul li {
+    font-family: sans-serif;
+    font-size: 0.7rem;
+    margin : 0;
+    padding : 0;
+}
+
+.stack-ul li {
+    font-size: 0.7rem;
+    padding: 0.2vw;
+    border: 1px solid var(--green);
+    margin-right: 3px;
+    border-radius: 1vw;
+    margin-top: 4px;
 }

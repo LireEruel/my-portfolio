@@ -59,7 +59,7 @@ function About() {
         </div>
 
         <div className="img-wrap">
-          <img src={require("../assets/profile_image.jpg")}></img>
+          <img src={require("../assets/image/profile_image.jpg")}></img>
         </div>
       </div>
       <Animation />
