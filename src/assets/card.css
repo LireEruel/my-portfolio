@@ -1,0 +1,28 @@
+
+.card {
+    background-color: var(--white);
+    width: 15vw;
+    height: 15vw;
+    border-radius: 0.5vw;
+}
+
+.card img {
+    width: 15vw;
+    height: 15vw;
+    border-radius: 0.5vw;
+    object-fit: cover;
+}
+
+.card h2 {
+    margin : 0;
+    padding : 1vw
+}
+
+.card p {
+    color : black;
+    display: -webkit-box;
+    -webkit-line-clamp: 9 ;
+    white-space: normal;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+}
