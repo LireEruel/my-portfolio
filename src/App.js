@@ -29,14 +29,14 @@ function App() {
         <aside id="right_aside">lnb</aside>
         <hr />
         <section id="contents">
-          <Home step={step} />
-          <AnimationOnScroll animateIn="animate__fadeIn">
+          <Home step={step} className="content" />
+          <AnimationOnScroll className="content" animateIn="animate__fadeIn">
             <About step={step} />
           </AnimationOnScroll>
-          <AnimationOnScroll animateIn="animate__fadeIn">
+          <AnimationOnScroll className="content" animateIn="animate__fadeIn">
             <Work />
           </AnimationOnScroll>
-          <AnimationOnScroll animateIn="animate__fadeIn">
+          <AnimationOnScroll className="content" animateIn="animate__fadeIn">
             <Experience />
           </AnimationOnScroll>
         </section>

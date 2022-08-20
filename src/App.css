@@ -40,7 +40,9 @@ hr {
   width: 100%;
   z-index: 1;
 }
-
+.content {
+  overflow: hidden;
+}
 #footer {
   height: 10vh;
 }
