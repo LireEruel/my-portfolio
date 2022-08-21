@@ -39,6 +39,7 @@ hr {
 #contents {
   width: 100%;
   z-index: 1;
+  padding-bottom: 10vh;
 }
 .content {
   overflow: hidden;
