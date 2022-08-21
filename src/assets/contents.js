@@ -1,5 +1,15 @@
 const experiences = [
   {
+    imgUrl: require("../assets/image/baby_shower_logo.jpg"),
+    title: "돌잔치 초대장",
+    content:
+      "조카의 돌잔치 초대장을 웹으로 구현하였습니다. 다양한 css 효과를 사용하였으며 간단한 댓글 기능이 포함되었습니다.",
+    contribution: ["front-end 구현"],
+    stack: ["svelte"],
+    notionUrl:
+      "https://www.notion.so/first-birth-Toy-9f2cf6edd2f54611a5df7d466dc1e833",
+  },
+  {
     imgUrl: require("../assets/image/first_line_logo.png"),
     title: "첫 줄",
     content:
@@ -21,16 +31,6 @@ const experiences = [
     stack: ["React JS"],
     notionUrl:
       "https://www.notion.so/BukPago-school-project-1b7b8d043a0e496292bac544e94766ba",
-  },
-  {
-    imgUrl: require("../assets/image/baby_shower_logo.jpg"),
-    title: "돌잔치 초대장",
-    content:
-      "조카의 돌잔치 초대장을 웹으로 구현하였습니다. 다양한 css 효과를 사용하였으며 간단한 댓글 기능이 포함되었습니다.",
-    contribution: ["front-end 구현"],
-    stack: ["svelte"],
-    notionUrl:
-      "https://www.notion.so/first-birth-Toy-9f2cf6edd2f54611a5df7d466dc1e833",
   },
 ];
 
