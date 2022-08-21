@@ -9,6 +9,7 @@
     min-height: 20em;
     display: flex;
     cursor: pointer;
+    margin-right: 1vw;
 }
 
 .card-content {

@@ -34,3 +34,7 @@
     text-align: start;
     margin-right: 5vw;
 }
+
+.card-wrap {
+    display: flex;
+}
