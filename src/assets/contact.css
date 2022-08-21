@@ -1,6 +1,5 @@
 #contact {
     padding-top: 10vh;
-    height: 60vh;
     width: 100%;
     display: flex;
     align-items: flex-start;
@@ -20,10 +19,7 @@
     width: 50%;
 }
 
-.mail-form {
-    display: flex;
-    flex-direction: column;
-}
+
 
 .contact-content h1 {
     color : var(--green)
@@ -36,4 +32,35 @@
 
 .contact-info img {
     width: 30px;
+}
+
+.mail-form {
+    display: flex;
+    flex-direction: column;
+}
+
+.mail-form label {
+    color : var(--white);
+    margin : 10px 0px;
+    text-align: start;
+}
+
+.send-btn {
+    background: transparent;
+    border : 1px solid var(--green);
+    color : var(--green);
+    width: 10vw;
+    padding : 10px;
+    margin : auto
+}
+
+.mail-form input {
+    border-radius: 5px;
+}
+
+.mail-form textarea {
+    width: 20vw;
+    height: 10vh;
+    border-radius: 5px;
+    margin-bottom: 20px;
 }

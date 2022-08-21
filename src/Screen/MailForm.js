@@ -16,10 +16,12 @@ export const MailForm = () => {
       )
       .then(
         (result) => {
-          console.log(result.text);
+          alert("성공적으로 전송하였습니다!");
         },
         (error) => {
-          console.log(error.text);
+          alert(
+            "이메일 전송에 실패하였습니다. jsh001505@naver.com으로 문의 바랍니다."
+          );
         }
       );
   };
@@ -32,7 +34,7 @@ export const MailForm = () => {
       <input type="email" name="user_email" />
       <label>Message</label>
       <textarea name="message" />
-      <input type="submit" value="Send" />
+      <input type="submit" value="Send" className="send-btn" />
     </form>
   );
 };
