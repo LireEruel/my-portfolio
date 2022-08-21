@@ -1,7 +1,8 @@
 #experience {
     display: flex;
-    align-items: flex-start;
+    align-items: center;
     flex-direction: column;
+    width: 100%;
     margin: 0px 20vw;
 }
 
@@ -13,6 +14,8 @@
     animation-duration: 1s;
     animation-duration: leaner;
     animation-delay: 0.2s;
+    width: 100%;
+    text-align: start;
 }
 
 #experience span {
@@ -36,4 +39,7 @@
 
 .card-wrap {
     display: flex;
+    width: 100%;
+    flex-wrap: wrap;
+    justify-content: space-between;
 }
