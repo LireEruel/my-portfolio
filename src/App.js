@@ -8,6 +8,7 @@ import Experience from "./Screen/Experience";
 import Work from "./Screen/Work";
 import "animate.css/animate.min.css";
 import { AnimationOnScroll } from "react-animation-on-scroll";
+import Contact from "./Screen/Contact";
 
 function App() {
   const [step, setStep] = useState(0);
@@ -38,6 +39,9 @@ function App() {
           </AnimationOnScroll>
           <AnimationOnScroll className="content" animateIn="animate__fadeIn">
             <Experience />
+          </AnimationOnScroll>
+          <AnimationOnScroll className="content" animateIn="animate__fadeIn">
+            <Contact />
           </AnimationOnScroll>
         </section>
         <hr />

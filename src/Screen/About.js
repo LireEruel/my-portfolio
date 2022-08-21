@@ -62,7 +62,7 @@ function About() {
           <img src={require("../assets/image/profile_image.jpg")}></img>
         </div>
       </div>
-      <Animation />
+      {/* <Animation /> */}
     </section>
   );
 }
