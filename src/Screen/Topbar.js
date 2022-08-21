@@ -28,11 +28,29 @@ function Topbar({ step }) {
       </Link>
     </li>,
     <li key="experience">
-      <a>Experience</a>
+      <Link
+        activeClass="active"
+        to="experience"
+        spy={true}
+        smooth={true}
+        offset={-100}
+        duration={500}
+      >
+        Experience
+      </Link>
     </li>,
 
     <li key="contact">
-      <a>Contact</a>
+      <Link
+        activeClass="active"
+        to="contact"
+        spy={true}
+        smooth={true}
+        offset={-100}
+        duration={500}
+      >
+        Contact
+      </Link>
     </li>,
   ];
 

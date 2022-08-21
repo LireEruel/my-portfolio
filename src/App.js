@@ -26,8 +26,6 @@ function App() {
 
       <div id="container">
         <Snowfall />
-        <aside id="left_aside">lnb</aside>
-        <aside id="right_aside">lnb</aside>
         <hr />
         <section id="contents">
           <Home step={step} className="content" />
@@ -46,7 +44,6 @@ function App() {
         </section>
         <hr />
       </div>
-      <div id="footer">footer</div>
     </div>
   );
 }
