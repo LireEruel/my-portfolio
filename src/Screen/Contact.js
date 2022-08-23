@@ -15,6 +15,11 @@ function Contact() {
     window.open("https://github.com/LireEruel");
   };
 
+  const onClickVelogButton = (e) => {
+    e.preventDefault();
+    window.open("https://velog.io/@lire_eruel");
+  };
+
   return (
     <section id="contact">
       <h1 className="title">
@@ -29,7 +34,7 @@ function Contact() {
           <button onClick={onClickGitButton}>
             <img src={require("../assets/image/git_icon.png")} />
           </button>
-          <button onClick={onClickGitButton}>
+          <button onClick={onClickVelogButton}>
             <img src={require("../assets/image/velog_icon.png")} />
           </button>
         </div>
