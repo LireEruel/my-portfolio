@@ -1,10 +1,10 @@
 
 #home {
-    height: 95vh;
     display: flex;
     align-items: flex-start;
     flex-direction: column;
-    margin: 0px 20vw;
+    margin-left:  20vw;
+    padding-bottom: 22vh;
 }
 
 .greeting{

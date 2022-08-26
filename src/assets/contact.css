@@ -56,6 +56,11 @@
 
 .mail-form input {
     border-radius: 5px;
+    transition: all 0.25s;
+}
+
+.mail-form input:hover {
+    background-color: var(--green-tint);
 }
 
 .mail-form textarea {
