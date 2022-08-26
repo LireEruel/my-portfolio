@@ -4,7 +4,7 @@
   -webkit-box-pack: justify;
   justify-content: center;
   align-items: center;
-  padding : 10px 0px 10px;
+  padding : 0px;
   box-shadow: 0 10px 30px -10px;
   display: flex;
   top: 0;
@@ -14,15 +14,9 @@
   animation-name: enter;
   animation-duration: 1s;
   animation-duration: leaner;
+  height: 70px;
 }
-ol {
-  list-style: none;
-  margin:0;
-  padding:0;
-  counter-reset: menu_item;
 
-  width : 30vw
-}
 li {
   margin: 0 0 0 0 ;
   padding: 15px;
@@ -31,6 +25,56 @@ li {
   animation-name: enter;
   animation-duration: 1s;
   animation-duration: leaner;
+}
+
+@media screen and (min-width: 550px) {
+  ol {
+    list-style: none;
+    margin:0;
+    padding:0;
+    counter-reset: menu_item;
+    width: 550px;
+  }
+
+  .resume-btn {
+    position: absolute;
+    height: 40px;
+    margin: 0px;
+    padding: 0px 1rem;
+    border: 1px solid var(--green);
+    color:var(--green);
+    background : transparent;
+    cursor: pointer;
+    border-radius: 0.3rem;
+    margin-left: 1vw;
+    margin-right: 1vw;
+    animation-name: enter;
+    animation-duration: 1s;
+    animation-duration: leaner;
+    right: 0;
+  }
+}
+@media screen and (max-width: 550px) {
+  ol {
+    display: none
+  }
+
+  .resume-btn {
+    height: 40px;
+    margin: 0px;
+    padding: 1rem;
+    border: 1px solid var(--green);
+    color:var(--green);
+    background : transparent;
+    cursor: pointer;
+    border-radius: 0.3rem;
+    margin-left: 1vw;
+    margin-right: 1vw;
+    animation-name: enter;
+    animation-duration: 1s;
+    animation-duration: leaner;
+    right: 0;
+  }
 }
 ol li a::before {
   counter-increment: menu_item;
@@ -46,24 +90,7 @@ ol li a {
   color: aliceblue;
   font-size: 0.8rem;
 }
-.resume-btn {
-  position: absolute;
-  height: 70%;
-  margin: 0 0 0 0 ;
-  padding: 1rem 1.2rem 1.2rem 1rem;
-  border: 1px solid var(--green);
-  float: left;
-  color:var(--green);
-  background : transparent;
-  cursor: pointer;
-  border-radius: 0.3rem;
-  margin-left: 1vw;
-  margin-right: 1vw;
-  animation-name: enter;
-  animation-duration: 1s;
-  animation-duration: leaner;
-  right: 0;
-}
+
 
 
 nav {

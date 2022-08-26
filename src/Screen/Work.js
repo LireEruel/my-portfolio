@@ -80,7 +80,6 @@ function Work() {
           소통을 하는 팀에게 git 과 노션을 제안하여 협업 문화를 정착시켰습니다.
         </p>
         <br />
-
         <p>
           <span>사용 기술</span> : React native
         </p>
