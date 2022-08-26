@@ -1,7 +1,14 @@
 import { Link } from "react-scroll";
 import "../assets/topbar.css";
-
+import RESUME from "../assets/resume.pdf";
 function Topbar({ step }) {
+  const onClickResume = () => {
+    const link = document.createElement("a");
+    link.href = RESUME;
+    document.body.appendChild(link);
+    link.click();
+    document.body.removeChild(link);
+  };
   return (
     <nav>
       <div></div>
@@ -64,7 +71,11 @@ function Topbar({ step }) {
             </li>
           ) : null}
         </ol>
-        {step > 4 ? <button className="resume-btn">Resume</button> : null}
+        {step > 4 ? (
+          <button className="resume-btn" onClick={onClickResume}>
+            Resume
+          </button>
+        ) : null}
       </div>
     </nav>
   );
