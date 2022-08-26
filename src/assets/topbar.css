@@ -62,7 +62,7 @@ li {
   .resume-btn {
     height: 40px;
     margin: 0px;
-    padding: 1rem;
+    padding: 0px 1rem;
     border: 1px solid var(--green);
     color:var(--green);
     background : transparent;
