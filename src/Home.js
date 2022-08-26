@@ -1,3 +1,4 @@
+import { Link } from "react-scroll";
 import "./assets/home.css";
 
 function Home({ step }) {
@@ -27,7 +28,19 @@ function Home({ step }) {
           </p>
         </div>
       ) : null}
-      {step > 10 ? <button className="contact-btn">Contact me</button> : null}
+
+      {step > 10 ? (
+        <Link
+          activeClass="active"
+          to="contact"
+          spy={true}
+          smooth={true}
+          offset={-100}
+          duration={500}
+        >
+          <button className="contact-btn">Contact me</button>
+        </Link>
+      ) : null}
     </section>
   );
 }
