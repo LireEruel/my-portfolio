@@ -13,18 +13,8 @@
 hr {
   display: none;
 }
-#left_aside {
-  width: 10rem;
-  position: fixed;
-  height: 100vh;
-}
 
-#right_aside {
-  width: 10rem;
-  position: fixed;
-  height: 100vh;
-  right: 0;
-}
+
 
 ::-webkit-scrollbar {
   width : 0.5vw
@@ -67,6 +57,21 @@ button:hover {
   .App-logo {
     animation: App-logo-spin infinite 20s linear;
   }
+}
+
+@media screen and (max-width : 800px) {
+  #default-view {
+    display : none;
+    transition: all 0.25s;
+  }
+}
+
+@media screen and (min-width : 800px) {
+  #error-view {
+    display : none;
+    transition: all 0.25s;
+  }
+
 }
 
 
