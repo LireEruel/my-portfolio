@@ -31,8 +31,9 @@ function App() {
           <hr />
           <section id="contents">
             <Home step={step} className="content" />
+
             <AnimationOnScroll className="content" animateIn="animate__fadeIn">
-              <About step={step} />
+              {step > 11 ? <About step={step} /> : null}
             </AnimationOnScroll>
             <AnimationOnScroll className="content" animateIn="animate__fadeIn">
               <Work />
