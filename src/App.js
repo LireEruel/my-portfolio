@@ -9,6 +9,8 @@ import Work from "./Screen/Work";
 import "animate.css/animate.min.css";
 import { AnimationOnScroll } from "react-animation-on-scroll";
 import Contact from "./Screen/Contact";
+import TooSmallScreen from "./Screen/TooSmallScreen";
+import Animation from "./Screen/Animation";
 
 function App() {
   const [step, setStep] = useState(0);
@@ -20,29 +22,33 @@ function App() {
 
   return (
     <div className="App">
-      <nav className="App-bar">
-        <Topbar step={step} />
-      </nav>
-
-      <div id="container">
-        <Snowfall />
-        <hr />
-        <section id="contents">
-          <Home step={step} className="content" />
-          <AnimationOnScroll className="content" animateIn="animate__fadeIn">
-            <About step={step} />
-          </AnimationOnScroll>
-          <AnimationOnScroll className="content" animateIn="animate__fadeIn">
-            <Work />
-          </AnimationOnScroll>
-          <AnimationOnScroll className="content" animateIn="animate__fadeIn">
-            <Experience />
-          </AnimationOnScroll>
-          <AnimationOnScroll className="content" animateIn="animate__fadeIn">
-            <Contact />
-          </AnimationOnScroll>
-        </section>
-        <hr />
+      <Snowfall />
+      <div id="default-view">
+        <nav className="App-bar">
+          <Topbar step={step} />
+        </nav>
+        <div id="container">
+          <hr />
+          <section id="contents">
+            <Home step={step} className="content" />
+            <AnimationOnScroll className="content" animateIn="animate__fadeIn">
+              <About step={step} />
+            </AnimationOnScroll>
+            <AnimationOnScroll className="content" animateIn="animate__fadeIn">
+              <Work />
+            </AnimationOnScroll>
+            <AnimationOnScroll className="content" animateIn="animate__fadeIn">
+              <Experience />
+            </AnimationOnScroll>
+            <AnimationOnScroll className="content" animateIn="animate__fadeIn">
+              <Contact />
+            </AnimationOnScroll>
+          </section>
+          <hr />
+        </div>
+      </div>
+      <div id="error-view">
+        <TooSmallScreen />
       </div>
     </div>
   );

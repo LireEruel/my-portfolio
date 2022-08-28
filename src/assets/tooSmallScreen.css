@@ -1,0 +1,29 @@
+.too-small-screen {
+    width: 100vw;
+    height: 100vh;
+    background-color: var(--dark-gray);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.too-small-screen h1 {
+    margin : 0px;
+    text-align: center;
+    color : var(--green);
+    font-size: 1rem;
+
+}
+
+#oops {
+    font-family: sans-serif;
+    font-size: 5rem;
+    color: var(--white);
+    margin : 2rem
+}
+
+.animation {
+    position: absolute;
+    bottom: 0px;
+}
+
