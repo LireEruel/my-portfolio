@@ -18,14 +18,12 @@ function Home({ step }) {
           </p>
           <p className="subInfo">
             현업에서 글로벌 채팅앱 FE 개발을 맡아 친구 추가, fcm 처리 등 주요
-            기능을 개발, electron + react js로 pc 버전 앱 기능 개발{" "}
+            기능을 개발
           </p>
           <p className="subInfo">
             사내 협업 및 버전관리 방식 제안하여 적용시킨 경험
           </p>
-          <p className="subInfo">
-            fcm 처리 및 android, ios 하이브리드 개발 경험
-          </p>
+          <p className="subInfo">웹, 하이브리드 앱, 데스트롭 앱 개발</p>
         </div>
       ) : null}
 
