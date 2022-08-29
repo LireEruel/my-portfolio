@@ -36,13 +36,13 @@ function App() {
               {step > 11 ? <About step={step} /> : null}
             </AnimationOnScroll>
             <AnimationOnScroll className="content" animateIn="animate__fadeIn">
-              <Work />
+              {step > 12 ? <Work step={step} /> : null}
             </AnimationOnScroll>
             <AnimationOnScroll className="content" animateIn="animate__fadeIn">
-              <Experience />
+              {step > 13 ? <Experience step={step} /> : null}
             </AnimationOnScroll>
             <AnimationOnScroll className="content" animateIn="animate__fadeIn">
-              <Contact />
+              {step > 14 ? <Contact step={step} /> : null}
             </AnimationOnScroll>
           </section>
           <hr />
