@@ -7,6 +7,7 @@ function About() {
     "CSS",
     "JavaScript",
     "React.js",
+    "React Native",
     "Restful WebServices",
     "Git",
     "Firebase",
@@ -17,8 +18,9 @@ function About() {
   return (
     <section id="about">
       <h1 className="title">
-        01. <span>About Me</span>
+        01. <span>About Me </span>
       </h1>
+      <hr />
       <br />
       <div className="content">
         <div>
