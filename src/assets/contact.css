@@ -37,6 +37,9 @@
 .mail-form {
     display: flex;
     flex-direction: column;
+    animation-name: enter;
+    animation-duration: 1s;
+    animation-duration: leaner;
 }
 
 .mail-form label {
