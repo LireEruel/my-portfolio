@@ -21,15 +21,16 @@ function Work() {
         (주)애니챗 <span>22.01~22.09</span>
       </h2>
       <div className="work-block">
-        <div onClick={onFirstClicked}>
+        <div className="arccodion-header" onClick={onFirstClicked}>
           <h3>
-            신규 서비스 개발 리드 🖥️
-            <span className="span-date">22.06 ~ 22.09</span>
+            신규 서비스 개발 리드🖥️
+            <span className="span-date"> 22.06 ~ 22.09</span>
+            <span className="arccodion-arrow">v</span>
           </h3>
         </div>
 
         {firstOpened ? (
-          <div>
+          <div className="detail-block">
             <div className="tag-wrap">
               <p className="tag">Electron</p>
               <p className="tag">React js</p>
@@ -53,13 +54,14 @@ function Work() {
       <div className="work-block">
         <div className="arccodion-header" onClick={onSeconedClicked}>
           <h3>
-            앱 로딩속도 개선 프로젝트 📱
+            앱 로딩속도 개선 프로젝트📱
             <span className="span-date"> 22.03 ~ 22.06</span>
+            <span className="arccodion-arrow">v</span>
           </h3>
         </div>
         <div>
           {seconedOpened ? (
-            <div>
+            <div className="detail-block">
               <div className="tag-wrap">
                 <p className="tag">React js</p>
                 <p className="tag">Fcm</p>

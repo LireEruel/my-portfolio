@@ -18,6 +18,7 @@
 }
 
 
+
 .title {
     color : var(--green);
     font-size: 1.2rem;
@@ -30,17 +31,39 @@
 .work-block {
     text-align: start;
     margin-left: 1vw;
+    transition: all 0.25s;
+    padding-left: 1vw;
+}
+
+.work-block:hover {
+    background-color: var(--green-tint);
+    
+}
+.arccodion-header {
+    cursor: pointer;
+    width: 35vw;
 }
 .title span {
     color : var(--gray-tint);
     font-size: 2rem;
     font-family: var(--font-mono);
 }
-
+.detail-block {
+    transition: all 0.25s;
+}
 .span-date {
     color: var(--green);
     font-family: var(--font-mono);
     font-size:1rem
+}
+
+.arccodion-arrow {
+    position: relative;
+    color: var(--green);
+    font-family: var(--font-mono);
+    font-size: 1rem;
+    margin-right: 2vw;
+    float: right;
 }
 
 #work p strong {
@@ -50,13 +73,14 @@
 .inner-text {
     text-align: start;
     margin-right: 5vw;
-
+   
 }
 
 .work-info {
     text-align: start;
     color:var(--gray-tint);
     margin-left: 0.5vw;
+    padding-bottom: 10px;
 }
 
 #work p span {
