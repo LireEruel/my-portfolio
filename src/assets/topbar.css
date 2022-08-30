@@ -33,7 +33,7 @@ li {
     margin:0;
     padding:0;
     counter-reset: menu_item;
-    width: 550px;
+    width: 410px;
   }
 
   .resume-btn {
