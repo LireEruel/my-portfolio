@@ -23,7 +23,7 @@ function Contact() {
   return (
     <section id="contact">
       <h1 className="title">
-        04. <span>Contact</span>
+        03. <span>Contact</span>
       </h1>
       <div className="contact-content">
         <div className="contact-info">

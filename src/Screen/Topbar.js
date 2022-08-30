@@ -42,7 +42,7 @@ function Topbar({ step }) {
               </Link>
             </li>
           ) : null}
-          {step > 2 ? (
+          {/* {step > 2 ? (
             <li key="experience">
               <Link
                 activeClass="active"
@@ -55,8 +55,8 @@ function Topbar({ step }) {
                 Experience
               </Link>
             </li>
-          ) : null}
-          {step > 3 ? (
+          ) : null} */}
+          {step > 2 ? (
             <li key="contact">
               <Link
                 activeClass="active"
@@ -71,7 +71,7 @@ function Topbar({ step }) {
             </li>
           ) : null}
         </ol>
-        {step > 4 ? (
+        {step > 3 ? (
           <button className="resume-btn" onClick={onClickResume}>
             Resume
           </button>
