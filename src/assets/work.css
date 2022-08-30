@@ -64,8 +64,26 @@
     font-size: 1rem;
     margin-right: 2vw;
     float: right;
+    -webkit-transition: all 0.5s ease-in-out;
+    -moz-transition: all 0.5s ease-in-out;
+    -o-transition: all 0.5s ease-in-out;
+    transition: all 0.5s ease-in-out;
+}
+#first-arrow.rotated{
+    -webkit-transform : rotate(180deg); 
+    -moz-transform : rotate(180deg); 
+    -ms-transform : rotate(180deg); 
+    -o-transform : rotate(180deg); 
+    transform : rotate(180deg); 
 }
 
+#seconed-arrow.rotated{
+    -webkit-transform : rotate(180deg); 
+    -moz-transform : rotate(180deg); 
+    -ms-transform : rotate(180deg); 
+    -o-transform : rotate(180deg); 
+    transform : rotate(180deg); 
+}
 #work p strong {
     color : var(--gray-tint);
     font-size: 1.1rem

@@ -18,7 +18,7 @@ const experiences = [
     content:
       "북파고는 북한어를 남한어로 번역해주는 웹 페이지입니다. 파일번역 및 남북한 단어사전도 제공합니다.",
     contribution: ["데이터 크롤링 및 전처리", "메인페이지 front-end 구현"],
-    stack: ["React JS"],
+    stack: ["React JS", "React JS", "Python"],
     notionUrl:
       "https://www.notion.so/BukPago-school-project-1b7b8d043a0e496292bac544e94766ba",
   },

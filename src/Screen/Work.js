@@ -7,9 +7,11 @@ function Work() {
 
   const onFirstClicked = useCallback(() => {
     setFirstOpened(!firstOpened);
+    document.getElementById("first-arrow").classList.toggle("rotated");
   }, [firstOpened]);
 
   const onSeconedClicked = useCallback(() => {
+    document.getElementById("seconed-arrow").classList.toggle("rotated");
     setSeconedOpened(!seconedOpened);
   }, [seconedOpened]);
   return (
@@ -25,7 +27,9 @@ function Work() {
           <h3>
             신규 서비스 개발 리드🖥️
             <span className="span-date"> 22.06 ~ 22.09</span>
-            <span className="arccodion-arrow">v</span>
+            <span className="arccodion-arrow" id="first-arrow">
+              v
+            </span>
           </h3>
         </div>
 
@@ -56,7 +60,9 @@ function Work() {
           <h3>
             앱 로딩속도 개선 프로젝트📱
             <span className="span-date"> 22.03 ~ 22.06</span>
-            <span className="arccodion-arrow">v</span>
+            <span className="arccodion-arrow" id="seconed-arrow">
+              v
+            </span>
           </h3>
         </div>
         <div>
