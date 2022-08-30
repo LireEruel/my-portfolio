@@ -29,6 +29,7 @@
 }
 .work-block {
     text-align: start;
+    margin-left: 1vw;
 }
 .title span {
     color : var(--gray-tint);
@@ -49,11 +50,13 @@
 .inner-text {
     text-align: start;
     margin-right: 5vw;
+
 }
 
 .work-info {
     text-align: start;
-    color:var(--gray-tint)
+    color:var(--gray-tint);
+    margin-left: 0.5vw;
 }
 
 #work p span {
