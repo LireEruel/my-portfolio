@@ -1,20 +1,20 @@
 {
   "files": {
-    "main.css": "/my-portfolio/static/css/main.dbc02e31.css",
-    "main.js": "/my-portfolio/static/js/main.7de1c7cb.js",
+    "main.css": "/my-portfolio/static/css/main.7a392dae.css",
+    "main.js": "/my-portfolio/static/js/main.09bb3542.js",
     "static/js/787.128fc6e9.chunk.js": "/my-portfolio/static/js/787.128fc6e9.chunk.js",
     "static/media/SFMonoRegular.otf": "/my-portfolio/static/media/SFMonoRegular.1d07f933cdf138950a80.otf",
     "static/media/baby_shower_logo.jpg": "/my-portfolio/static/media/baby_shower_logo.8642fae1b7af8436db96.jpg",
-    "static/media/resume.pdf": "/my-portfolio/static/media/resume.21c145b26f9b330e4c05.pdf",
+    "static/media/resume.pdf": "/my-portfolio/static/media/resume.cf0d3a56d4f6820e8498.pdf",
     "static/media/who_am_I_logo.png": "/my-portfolio/static/media/who_am_I_logo.8494060c85a31679a2c5.png",
     "static/media/bukPagoLogo.png": "/my-portfolio/static/media/bukPagoLogo.567494c45dd3d78bf9e1.png",
     "index.html": "/my-portfolio/index.html",
-    "main.dbc02e31.css.map": "/my-portfolio/static/css/main.dbc02e31.css.map",
-    "main.7de1c7cb.js.map": "/my-portfolio/static/js/main.7de1c7cb.js.map",
+    "main.7a392dae.css.map": "/my-portfolio/static/css/main.7a392dae.css.map",
+    "main.09bb3542.js.map": "/my-portfolio/static/js/main.09bb3542.js.map",
     "787.128fc6e9.chunk.js.map": "/my-portfolio/static/js/787.128fc6e9.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.dbc02e31.css",
-    "static/js/main.7de1c7cb.js"
+    "static/css/main.7a392dae.css",
+    "static/js/main.09bb3542.js"
   ]
 }
