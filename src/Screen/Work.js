@@ -23,39 +23,6 @@ function Work() {
         (주)애니챗 <span>22.01~22.09</span>
       </h2>
       <div className="work-block">
-        <div className="arccodion-header" onClick={onFirstClicked}>
-          <h3>
-            신규 서비스 개발 리드🖥️
-            <span className="span-date"> 22.06 ~ 22.09</span>
-            <span className="arccodion-arrow" id="first-arrow">
-              v
-            </span>
-          </h3>
-        </div>
-
-        {firstOpened ? (
-          <div className="detail-block">
-            <div className="tag-wrap">
-              <p className="tag">Electron</p>
-              <p className="tag">React js</p>
-              <p className="tag">Fcm</p>
-              <p className="tag">socket</p>
-              <p className="tag">Rest api</p>
-            </div>
-            <p className="work-info">
-              기존 mobile버전 채팅 앱을 PC버전으로 개발하는 프로젝트입니다.
-              디자이너, 퍼블리셔와는 처음으로 함께 협업을 해볼 수 있는 기회가
-              되었습니다. 협업을 위해 노션을 도입하여 간트차트, 보드 등을 활용해
-              프로젝트 일정관리를 하였습니다. 노션을 통한 적극적인 소통과 꼼꼼한
-              PR 및 코드 리뷰를 PC버전 개발팀의 문화로 정착하였습니다. 이
-              프로젝트 덕분에 현업에서 프로젝트 설계부터 배포까지 참가할 수
-              있었습니다.
-            </p>
-            <br />
-          </div>
-        ) : null}
-      </div>
-      <div className="work-block">
         <div className="arccodion-header" onClick={onSeconedClicked}>
           <h3>
             앱 로딩속도 개선 프로젝트📱
@@ -69,11 +36,11 @@ function Work() {
           {seconedOpened ? (
             <div className="detail-block">
               <div className="tag-wrap">
-                <p className="tag">React js</p>
-                <p className="tag">Fcm</p>
-                <p className="tag">socket</p>
-                <p className="tag">Rest api</p>
-                <p className="tag">notifee</p>
+                <p className="tag">React Native</p>
+                <p className="tag">FCM</p>
+                <p className="tag">Socket</p>
+                <p className="tag">REST API</p>
+                <p className="tag">Notifee</p>
               </div>
               <p className="work-info">
                 클라이언트 데이터 관리를 localstorage, sqlite, redux를 사용하던
@@ -91,6 +58,40 @@ function Work() {
           ) : null}
         </div>
       </div>
+      <div className="work-block">
+        <div className="arccodion-header" onClick={onFirstClicked}>
+          <h3>
+            신규 서비스 개발 리드🖥️
+            <span className="span-date"> 22.06 ~ 22.09</span>
+            <span className="arccodion-arrow" id="first-arrow">
+              v
+            </span>
+          </h3>
+        </div>
+
+        {firstOpened ? (
+          <div className="detail-block">
+            <div className="tag-wrap">
+              <p className="tag">Electron</p>
+              <p className="tag">React.js</p>
+              <p className="tag">FCM</p>
+              <p className="tag">Socket</p>
+              <p className="tag">REST API</p>
+            </div>
+            <p className="work-info">
+              기존 mobile버전 채팅 앱을 PC버전으로 개발하는 프로젝트입니다.
+              디자이너, 퍼블리셔와는 처음으로 함께 협업을 해볼 수 있는 기회가
+              되었습니다. 협업을 위해 노션을 도입하여 간트차트, 보드 등을 활용해
+              프로젝트 일정관리를 하였습니다. 노션을 통한 적극적인 소통과 꼼꼼한
+              PR 및 코드 리뷰를 PC버전 개발팀의 문화로 정착하였습니다. 이
+              프로젝트 덕분에 현업에서 프로젝트 설계부터 배포까지 참가할 수
+              있었습니다.
+            </p>
+            <br />
+          </div>
+        ) : null}
+      </div>
+
       {/* <div className="work-block">
         <h3>
           앱 고도화 및 개발팀 협업 문화 정착

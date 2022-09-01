@@ -54,16 +54,26 @@
     color : var(--green);
     width: 10vw;
     padding : 10px;
-    margin : auto
+    margin : auto;
+    font-family: sans-serif;
 }
 
 .mail-form input {
     border-radius: 5px;
     transition: all 0.25s;
 }
-
-.mail-form input:hover {
+.mail-input {
+    line-height: 1.5;
+    padding : 7px 14px;
+}
+.mail-input:hover {
+    background-color:  rgba(224,224,224);
+}
+.send-btn:hover {
     background-color: var(--green-tint);
+}
+.contact-info p {
+    line-height: 1.4;
 }
 
 .mail-form textarea {
@@ -71,4 +81,10 @@
     height: 10vh;
     border-radius: 5px;
     margin-bottom: 20px;
+    line-height: 1.4;
+    padding : 7px 14px;
+    font-family: sans-serif;
+}
+.mail-form textarea:hover {
+    background-color:  rgba(224,224,224);
 }
