@@ -30,9 +30,9 @@ export const MailForm = () => {
   return (
     <form ref={form} onSubmit={sendEmail} className="mail-form">
       <label>Name</label>
-      <input type="text" name="user_name" />
+      <input type="text" name="user_name" className="mail-input" />
       <label>Email</label>
-      <input type="email" name="user_email" />
+      <input type="email" name="user_email" className="mail-input" />
       <label>Message</label>
       <textarea name="message" />
       <input type="submit" value="Send" className="send-btn" />

@@ -41,7 +41,8 @@
 }
 .arccodion-header {
     cursor: pointer;
-    width: 35vw;
+    width: 56vw;
+    padding-right: 2vw;
 }
 .title span {
     color : var(--gray-tint);
@@ -62,7 +63,6 @@
     color: var(--green);
     font-family: var(--font-mono);
     font-size: 1rem;
-    margin-right: 2vw;
     float: right;
     -webkit-transition: all 0.5s ease-in-out;
     -moz-transition: all 0.5s ease-in-out;
@@ -97,8 +97,8 @@
 .work-info {
     text-align: start;
     color:var(--gray-tint);
-    margin-left: 0.5vw;
     padding-bottom: 10px;
+    line-height: 1.4;
 }
 
 #work p span {
