@@ -14,6 +14,24 @@ function Work() {
     document.getElementById("seconed-arrow").classList.toggle("rotated");
     setSeconedOpened(!seconedOpened);
   }, [seconedOpened]);
+
+  const workList = [
+    {
+      id : 1,
+      company : '(주)애니챗',
+      period : '22.01~22.09',
+      projets : [
+        {
+          id : 1,
+          name : ' 앱 로딩속도 개선 프로젝트📱',
+          period: '22.03 ~ 22.06',
+          tech_stack : ['React Native', 'FCM', 'Socket', 'REST API', 'Notifee'],
+          content : '클라이언트 데이터 관리를 localstorage, sqlite, redux를 사용하던 방식에서 redux persist store로 변경하고 로그인 과정에서 사용하는 수를 대폭 줄였습니다. 그 결과 평균 15초에서 17초 정도 걸리는 로딩속도를 2~3초로 단축시킬 수 있었습니다. 해결 방법을 찾는 과정 중 기존에 로그인 과정에 사용되는 불필요한 api의 수를 줄일 수 있도록 아이디어를 내어 기여하였습니다. 또한 로딩 속도 개선 과정에서 새로운 데이터 관리 방식에 맞게 모든 기능을 다시 구현해야 했습니다. 이 과정에서 약 40%의 기능을 구현하였습니다. 이 프로젝트를 통해 redux에 익숙해졌으며 js로 데이터 처리 하는 능력과 예외 처리를 생각하는 능력을 키울 수 있었습니다.'
+        },
+      ]
+    }
+  ]
+
   return (
     <section id="work">
       <h1 className="title">
