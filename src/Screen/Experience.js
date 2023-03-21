@@ -5,10 +5,6 @@ import experiences from "../assets/contents";
 function Experience() {
   return (
     <section id="experience">
-      {/* <h1 className="title">
-        03. <span>Experience</span>
-      </h1> */}
-
       <br />
       <div className="card-wrap">
         {experiences.map((experience, index) => {

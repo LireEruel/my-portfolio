@@ -16,6 +16,7 @@
     border-radius: 0.5vw;
     background-color: var(--white);
     min-width: 17em;
+
 }
 
 .card img {
@@ -50,6 +51,7 @@
     overflow: hidden;
     padding : 1em;
     font-size: 0.7em;
+    line-height: 1.4;
 }
 
 .contribution-ul {
@@ -61,7 +63,7 @@
 .stack-ul {
     list-style: none;
     overflow: auto;
-
+    margin : 5px 0px
 }
 
 .contribution-ul li {
@@ -69,6 +71,7 @@
     font-size: 0.7em;
     margin : 0;
     padding : 0;
+    line-height: 1.5;
 }
 
 .stack-ul li {
@@ -78,4 +81,5 @@
     margin-right: 3px;
     border-radius: 1vw;
     margin-top: 4px;
+    line-height: 1.5;
 }

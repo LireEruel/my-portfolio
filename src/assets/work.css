@@ -42,7 +42,7 @@
 .arccodion-header {
     cursor: pointer;
     width: 56vw;
-    padding-right: 2vw;
+    margin-right: 1vw;
 }
 .title span {
     color : var(--gray-tint);
