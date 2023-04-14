@@ -2,18 +2,25 @@ import { useCallback, useState } from "react";
 import "../assets/work.css";
 
 function Work() {
-  const [firstOpened, setFirstOpened] = useState(false);
-  const [seconedOpened, setSeconedOpened] = useState(false);
+  // const [firstOpened, setFirstOpened] = useState([]);
 
-  const onFirstClicked = useCallback(() => {
-    setFirstOpened(!firstOpened);
-    document.getElementById("first-arrow").classList.toggle("rotated");
-  }, [firstOpened]);
+  // const onFirstClicked = useCallback(() => {
+  //   setFirstOpened(!firstOpened);
+  //   document.getElementById("first-arrow").classList.toggle("rotated");
+  // }, [firstOpened]);
 
-  const onSeconedClicked = useCallback(() => {
-    document.getElementById("seconed-arrow").classList.toggle("rotated");
-    setSeconedOpened(!seconedOpened);
-  }, [seconedOpened]);
+  const [arccodionIdSet, setArccodionIdSet] = useState(new Set());
+
+  const onAccodionClicked = useCallback((id) => {
+    const newArccodionSet = new Set([...arccodionIdSet]);
+    if (newArccodionSet.has(id)) {
+      newArccodionSet.delete(id);
+    } else {
+      newArccodionSet.add(id);
+    }
+    setArccodionIdSet(newArccodionSet);
+    console.log(newArccodionSet);
+  });
 
   const workList = [
     {
@@ -22,7 +29,7 @@ function Work() {
       period: "22.01~22.09",
       projects: [
         {
-          id: 1,
+          id: "1-1",
           name: "앱 로딩속도 개선 프로젝트📱",
           period: "22.03 ~ 22.06",
           tech_stack: ["React Native", "FCM", "Socket", "REST API", "Notifee"],
@@ -30,7 +37,7 @@ function Work() {
             "클라이언트 데이터 관리 방식을 변경하여 로딩 속도를 2~3초로 단축시키고, 로그인 과정에서 불필요한 API 수를 줄이는 아이디어를 제안하여 프로젝트 성과를 이끌어냈습니다. 새로운 데이터 관리 방식에 맞게 모든 기능을 다시 구현해야 했고, 이 과정에서 약 40%의 기능을 구현하였습니다. 이 프로젝트를 통해 redux에 대한 이해와 JavaScript로 데이터 처리하는 능력, 예외 처리를 고려하는 능력을 키울 수 있었습니다.",
         },
         {
-          id: 2,
+          id: "1-2",
           name: "채팅 프로그램 PC버전 개발 리드🖥️",
           period: "22.06 ~ 22.09",
           tech_stack: ["Electron", "React.js", "FCM", "Socket", "REST API"],
@@ -45,7 +52,7 @@ function Work() {
       period: "22.10 ~ 23.04",
       projects: [
         {
-          id: 1,
+          id: "2-1",
           name: "관계 추출 모델 관리 도구 개발",
           period: "22.10 ~ 23.02",
           tech_stack: ["Vue.js", "Next.js", "REST API"],
@@ -53,7 +60,7 @@ function Work() {
             "경제 서비스에 사용되는 관계 추출 모델 관리 도구를 개발하였습니다. Closed IE, Open IE 등 정보 추출 방법에 따른 관계 추출 모델을 효과적으로 관리할 수 있도록 관계 추출 결과 시각화 및 성능 평가 기능을 개발하였습니다.",
         },
         {
-          id: 2,
+          id: "2-2",
           name: "클러스터링 도델 모니터링 도구 개발",
           period: "22.12 ~ 23.03",
           tech_stack: ["Vue.js", "TypeScript", "REST API"],
@@ -69,102 +76,40 @@ function Work() {
       <h1 className="title">
         02. <span>Work</span>
       </h1>
-      <h2>
-        (주)애니챗 <span>22.01~22.09</span>
-      </h2>
-      <div className="work-block">
-        <div className="arccodion-header" onClick={onSeconedClicked}>
-          <h3>
-            앱 로딩속도 개선 프로젝트📱
-            <span className="span-date"> 22.03 ~ 22.06</span>
-            <span className="arccodion-arrow" id="seconed-arrow">
-              v
-            </span>
-          </h3>
-        </div>
+      {workList.map((work) => (
         <div>
-          {seconedOpened ? (
-            <div className="detail-block">
-              <div className="tag-wrap">
-                <p className="tag">React Native</p>
-                <p className="tag">FCM</p>
-                <p className="tag">Socket</p>
-                <p className="tag">REST API</p>
-                <p className="tag">Notifee</p>
+          <h2>
+            {work.company} <span>{work.period}</span>
+          </h2>
+          {work.projects.map((project) => (
+            <div className="work-block">
+              <div
+                className="arccodion-header"
+                onClick={() => onAccodionClicked(project.id)}
+              >
+                <h3>
+                  {project.name}
+                  <span className="span-date">{project.period}</span>
+                  <span className="arccodion-arrow" id="seconed-arrow">
+                    v
+                  </span>
+                </h3>
               </div>
-              <p className="work-info">
-                클라이언트 데이터 관리를 localstorage, sqlite, redux를 사용하던
-                방식에서 redux persist store로 변경하고 로그인 과정에서 사용하는
-                수를 대폭 줄였습니다. 그 결과 평균 15초에서 17초 정도 걸리는
-                로딩속도를 2~3초로 단축시킬 수 있었습니다. 해결 방법을 찾는 과정
-                중 기존에 로그인 과정에 사용되는 불필요한 api의 수를 줄일 수
-                있도록 아이디어를 내어 기여하였습니다. 또한 로딩 속도 개선
-                과정에서 새로운 데이터 관리 방식에 맞게 모든 기능을 다시
-                구현해야 했습니다. 이 과정에서 약 40%의 기능을 구현하였습니다.
-                이 프로젝트를 통해 redux에 익숙해졌으며 js로 데이터 처리 하는
-                능력과 예외 처리를 생각하는 능력을 키울 수 있었습니다.
-              </p>
+              {arccodionIdSet.has(project.id) ? (
+                <div className="detail-block">
+                  {project.tech_stack.map((tech) => (
+                    <p className="tag" key={tech}>
+                      {tech}
+                    </p>
+                  ))}
+                  <p className="work-info">{project.content}</p>
+                  <br />
+                </div>
+              ) : null}
             </div>
-          ) : null}
+          ))}
         </div>
-      </div>
-      <div className="work-block">
-        <div className="arccodion-header" onClick={onFirstClicked}>
-          <h3>
-            신규 서비스 개발 리드🖥️
-            <span className="span-date"> 22.06 ~ 22.09</span>
-            <span className="arccodion-arrow" id="first-arrow">
-              v
-            </span>
-          </h3>
-        </div>
-
-        {firstOpened ? (
-          <div className="detail-block">
-            <div className="tag-wrap">
-              <p className="tag">Electron</p>
-              <p className="tag">React.js</p>
-              <p className="tag">FCM</p>
-              <p className="tag">Socket</p>
-              <p className="tag">REST API</p>
-            </div>
-            <p className="work-info">
-              기존 mobile버전 채팅 앱을 PC버전으로 개발하는 프로젝트입니다.
-              디자이너, 퍼블리셔와는 처음으로 함께 협업을 해볼 수 있는 기회가
-              되었습니다. 협업을 위해 노션을 도입하여 간트차트, 보드 등을 활용해
-              프로젝트 일정관리를 하였습니다. 노션을 통한 적극적인 소통과 꼼꼼한
-              PR 및 코드 리뷰를 PC버전 개발팀의 문화로 정착하였습니다. 이
-              프로젝트 덕분에 현업에서 프로젝트 설계부터 배포까지 참가할 수
-              있었습니다.
-            </p>
-            <br />
-          </div>
-        ) : null}
-      </div>
-
-      {/* <div className="work-block">
-        <h3>
-          앱 고도화 및 개발팀 협업 문화 정착
-          <span className="span-date"> 22.01 ~ 22.02</span>
-        </h3>
-        <p className="work-info">
-          알림시 진동 선택 기능, 폰트 크기 설정 기능 등 기존 앱 추가 개발 사항을
-          주도적으로 개발하였습니다. 그 과정에서 채팅 및 zip파일로 버전관리 및
-          소통을 하는 팀에게 git 과 노션을 제안하여 협업 문화를 정착시켰습니다.
-        </p>
-        <br />
-        <p>
-          <span>사용 기술</span> : React native
-        </p>
-        <p>
-          <span>플랫폼</span> : Android
-        </p>
-        <p>
-          <span>주요 기능 </span>: fcm, notifee를 활용한 채팅 시스템
-        </p>
-
-        <br />
-      </div> */}
+      ))}
     </section>
   );
 }
