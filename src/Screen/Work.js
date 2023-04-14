@@ -11,16 +11,18 @@ function Work() {
 
   const [arccodionIdSet, setArccodionIdSet] = useState(new Set());
 
-  const onAccodionClicked = useCallback((id) => {
-    const newArccodionSet = new Set([...arccodionIdSet]);
-    if (newArccodionSet.has(id)) {
-      newArccodionSet.delete(id);
-    } else {
-      newArccodionSet.add(id);
-    }
-    setArccodionIdSet(newArccodionSet);
-    console.log(newArccodionSet);
-  });
+  const onAccodionClicked = useCallback(
+    (id) => {
+      const newArccodionSet = new Set([...arccodionIdSet]);
+      if (newArccodionSet.has(id)) {
+        newArccodionSet.delete(id);
+      } else {
+        newArccodionSet.add(id);
+      }
+      setArccodionIdSet(newArccodionSet);
+    },
+    [arccodionIdSet]
+  );
 
   const workList = [
     {
@@ -77,12 +79,12 @@ function Work() {
         02. <span>Work</span>
       </h1>
       {workList.map((work) => (
-        <div>
+        <div key={work.id}>
           <h2>
             {work.company} <span>{work.period}</span>
           </h2>
           {work.projects.map((project) => (
-            <div className="work-block">
+            <div className="work-block" key={project.id}>
               <div
                 className="arccodion-header"
                 onClick={() => onAccodionClicked(project.id)}
