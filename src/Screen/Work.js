@@ -99,11 +99,13 @@ function Work() {
               </div>
               {arccodionIdSet.has(project.id) ? (
                 <div className="detail-block">
-                  {project.tech_stack.map((tech) => (
-                    <p className="tag" key={tech}>
-                      {tech}
-                    </p>
-                  ))}
+                  <div className="tag-wrap">
+                    {project.tech_stack.map((tech) => (
+                      <p className="tag" key={tech}>
+                        {tech}
+                      </p>
+                    ))}
+                  </div>
                   <p className="work-info">{project.content}</p>
                   <br />
                 </div>
