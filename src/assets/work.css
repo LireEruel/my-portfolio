@@ -46,6 +46,7 @@
 }
 .detail-block {
   transition: all 0.25s;
+  padding: 2%;
 }
 .span-date {
   color: var(--green);
