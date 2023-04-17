@@ -2,33 +2,27 @@
   text-align: center;
   background-color: var(--dark-gray);
   font-family: var(--font-mono);
-  position : relative;
+  position: relative;
   height: auto;
 }
-
 .App-logo {
   height: 40vmin;
   pointer-events: none;
 }
-hr {
-  display: none;
-}
-
-
 
 ::-webkit-scrollbar {
-  width : 0.5vw
+  width: 0.5vw;
 }
 ::-webkit-scrollbar-track {
   background-color: #282c34;
 }
 ::-webkit-scrollbar-thumb {
-  background: gray; 
+  background: gray;
   border-radius: 10px;
 }
 #contents {
   width: 100%;
-min-height: 100vh;
+  min-height: 100vh;
   z-index: 1;
   padding-bottom: 10vh;
 }
@@ -42,8 +36,8 @@ min-height: 100vh;
 button {
   padding: 1rem;
   border: 1px solid var(--green);
-  color:var(--green);
-  background : transparent;
+  color: var(--green);
+  background: transparent;
   cursor: pointer;
   border-radius: 0.3rem;
   margin-top: 3rem;
@@ -60,21 +54,19 @@ button:hover {
   }
 }
 
-@media screen and (max-width : 800px) {
+@media screen and (max-width: 800px) {
   #default-view {
-    display : none;
+    display: none;
     transition: all 0.25s;
   }
 }
 
-@media screen and (min-width : 800px) {
+@media screen and (min-width: 800px) {
   #error-view {
-    display : none;
+    display: none;
     transition: all 0.25s;
   }
-
 }
-
 
 @keyframes App-logo-spin {
   from {
@@ -92,6 +84,6 @@ button:hover {
   }
   to {
     transform: translateZ(0);
-    opacity : 1
+    opacity: 1;
   }
 }
