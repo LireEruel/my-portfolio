@@ -1,5 +1,5 @@
 import { useCallback, useState } from "react";
-import "../assets/work.css";
+import "../assets/work.scss";
 
 function Work() {
   const [arccodionIdSet, setArccodionIdSet] = useState(new Set());
@@ -74,40 +74,45 @@ function Work() {
       <h1 className="title">
         02. <span>Work</span>
       </h1>
-      {workList.map((work) => (
-        <div key={work.id}>
-          <h2>
-            {work.company} <span>{work.period}</span>
-          </h2>
-          {work.projects.map((project) => (
-            <div className="work-block" key={project.id}>
-              <div
-                className="arccodion-header"
-                onClick={() => onAccodionClicked(project.id)}
-              >
-                <h3>
-                  {project.name}
-                  <span className="span-date">{project.period}</span>
-                  <span className="arccodion-arrow" id={"project" + project.id}>
-                    v
-                  </span>
-                </h3>
-              </div>
-              {arccodionIdSet.has(project.id) ? (
-                <div className="detail-block">
-                  <div className="tag-wrap">
-                    {project.tech_stack.map((tech) => (
-                      <p className="tag" key={tech}>
-                        {tech}
-                      </p>
-                    ))}
-                  </div>
-                  <p className="work-info">{project.content}</p>
-                  <br />
+      {workList.map((work, index) => (
+        <div>
+          <div className="work-block" key={work.id}>
+            <h2>
+              {work.company} <span>{work.period}</span>
+            </h2>
+            {work.projects.map((project) => (
+              <div className="project-block" key={project.id}>
+                <div
+                  className="arccodion-header"
+                  onClick={() => onAccodionClicked(project.id)}
+                >
+                  <h3>
+                    {project.name}
+                    <span className="span-date">{project.period}</span>
+                    <span
+                      className="arccodion-arrow"
+                      id={"project" + project.id}
+                    >
+                      v
+                    </span>
+                  </h3>
                 </div>
-              ) : null}
-            </div>
-          ))}
+                {arccodionIdSet.has(project.id) ? (
+                  <div className="detail-block">
+                    <div className="tag-wrap">
+                      {project.tech_stack.map((tech) => (
+                        <p className="tag" key={tech}>
+                          {tech}
+                        </p>
+                      ))}
+                    </div>
+                    <p className="work-info">{project.content}</p>
+                  </div>
+                ) : null}
+              </div>
+            ))}
+          </div>
+          {index !== workList.length - 1 && <hr />}
         </div>
       ))}
     </section>

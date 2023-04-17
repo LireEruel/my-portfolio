@@ -28,7 +28,6 @@ function App() {
           <Topbar step={step} />
         </nav>
         <div id="container">
-          <hr />
           <section id="contents">
             <Home step={step} className="content" />
 
