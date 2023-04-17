@@ -1,3 +1,12 @@
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+}
+
 #work {
   display: flex;
   align-items: flex-start;
@@ -65,7 +74,8 @@
   -o-transition: all 0.5s ease-in-out;
   transition: all 0.5s ease-in-out;
 }
-#first-arrow.rotated {
+
+.rotated {
   -webkit-transform: rotate(180deg);
   -moz-transform: rotate(180deg);
   -ms-transform: rotate(180deg);
@@ -73,13 +83,6 @@
   transform: rotate(180deg);
 }
 
-#seconed-arrow.rotated {
-  -webkit-transform: rotate(180deg);
-  -moz-transform: rotate(180deg);
-  -ms-transform: rotate(180deg);
-  -o-transform: rotate(180deg);
-  transform: rotate(180deg);
-}
 #work p strong {
   color: var(--gray-tint);
   font-size: 1.1rem;
