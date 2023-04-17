@@ -2,22 +2,18 @@ import { useCallback, useState } from "react";
 import "../assets/work.css";
 
 function Work() {
-  // const [firstOpened, setFirstOpened] = useState([]);
-
-  // const onFirstClicked = useCallback(() => {
-  //   setFirstOpened(!firstOpened);
-  //   document.getElementById("first-arrow").classList.toggle("rotated");
-  // }, [firstOpened]);
-
   const [arccodionIdSet, setArccodionIdSet] = useState(new Set());
 
   const onAccodionClicked = useCallback(
     (id) => {
       const newArccodionSet = new Set([...arccodionIdSet]);
+      const $projectArrow = document.querySelector("#project" + id);
       if (newArccodionSet.has(id)) {
         newArccodionSet.delete(id);
+        $projectArrow.classList.remove("rotated");
       } else {
         newArccodionSet.add(id);
+        $projectArrow.classList.add("rotated");
       }
       setArccodionIdSet(newArccodionSet);
     },
@@ -92,7 +88,7 @@ function Work() {
                 <h3>
                   {project.name}
                   <span className="span-date">{project.period}</span>
-                  <span className="arccodion-arrow" id="seconed-arrow">
+                  <span className="arccodion-arrow" id={"project" + project.id}>
                     v
                   </span>
                 </h3>
