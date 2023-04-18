@@ -1,90 +1,87 @@
 #contact {
-    padding-top: 10vh;
-    width: 100%;
-    display: flex;
-    align-items: flex-start;
-    flex-direction: column;
-    margin: 0px 20vw;
+  padding-top: 10vh;
+  width: 100%;
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
 }
 
 .contact-content {
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
 
 .contact-info {
-    width: 50%;
+  width: 50%;
 }
 
-
-
 .contact-content h1 {
-    color : var(--green)
+  color: var(--green);
 }
 
 .contact-info button {
-    padding: 10px;
-    border : transparent
+  padding: 10px;
+  border: transparent;
 }
 
 .contact-info img {
-    width: 30px;
+  width: 30px;
 }
 
 .mail-form {
-    display: flex;
-    flex-direction: column;
-    animation-name: enter;
-    animation-duration: 1s;
-    animation-duration: leaner;
+  display: flex;
+  flex-direction: column;
+  animation-name: enter;
+  animation-duration: 1s;
+  animation-duration: leaner;
 }
 
 .mail-form label {
-    color : var(--white);
-    margin : 10px 0px;
-    text-align: start;
+  color: var(--white);
+  margin: 10px 0px;
+  text-align: start;
 }
 
 .send-btn {
-    background: transparent;
-    border : 1px solid var(--green);
-    color : var(--green);
-    width: 10vw;
-    padding : 10px;
-    margin : auto;
-    font-family: sans-serif;
+  background: transparent;
+  border: 1px solid var(--green);
+  color: var(--green);
+  width: 10vw;
+  padding: 10px;
+  margin: auto;
+  font-family: sans-serif;
 }
 
 .mail-form input {
-    border-radius: 5px;
-    transition: all 0.25s;
+  border-radius: 5px;
+  transition: all 0.25s;
 }
 .mail-input {
-    line-height: 1.5;
-    padding : 7px 14px;
+  line-height: 1.5;
+  padding: 7px 14px;
 }
 .mail-input:hover {
-    background-color:  rgba(224,224,224);
+  background-color: rgba(224, 224, 224);
 }
 .send-btn:hover {
-    background-color: var(--green-tint);
+  background-color: var(--green-tint);
 }
 .contact-info p {
-    line-height: 1.4;
+  line-height: 1.4;
 }
 
 .mail-form textarea {
-    width: 20vw;
-    height: 10vh;
-    border-radius: 5px;
-    margin-bottom: 20px;
-    line-height: 1.4;
-    padding : 7px 14px;
-    font-family: sans-serif;
+  width: 20vw;
+  height: 10vh;
+  border-radius: 5px;
+  margin-bottom: 20px;
+  line-height: 1.4;
+  padding: 7px 14px;
+  font-family: sans-serif;
 }
 .mail-form textarea:hover {
-    background-color:  rgba(224,224,224);
+  background-color: rgba(224, 224, 224);
 }

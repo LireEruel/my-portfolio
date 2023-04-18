@@ -1,102 +1,101 @@
 #about {
-    width: 100%;
-    display: flex;
-    align-items: flex-start;
-    flex-direction: column;
-    margin: 0px 20vw;
-    padding-bottom: 20vh;
+  width: 100%;
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+  padding-bottom: 20vh;
 }
 
 .title {
-    color : var(--green);
-    font-size: 1.2rem;
-    margin-left: 5px;
-    animation-name: enter;
-    animation-duration: 1s;
-    animation-duration: leaner;
-    animation-delay: 0.2s;
+  color: var(--green);
+  font-size: 1.2rem;
+  margin-left: 5px;
+  animation-name: enter;
+  animation-duration: 1s;
+  animation-duration: leaner;
+  animation-delay: 0.2s;
 }
 
 #about span {
-    color : var(--gray-tint);
-    font-size: 2rem;
+  color: var(--gray-tint);
+  font-size: 2rem;
 }
 
 #about p span {
-    color : var(--gray-tint);
-    font-size: 1.5rem;
+  color: var(--gray-tint);
+  font-size: 1.5rem;
 }
 
 #about p strong {
-    color : var(--gray-tint);
-    font-size: 1.1rem
+  color: var(--gray-tint);
+  font-size: 1.1rem;
 }
 .inner-text {
-    text-align: start;
-    margin-right: 5vw;
-    line-height: 1.5;
+  text-align: start;
+  margin-right: 5vw;
+  line-height: 1.5;
 }
 
 .content {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
 }
 .skill-view h2 {
-    margin-top: 4vh;
-    text-align: start;
-    color: var(--green);
-    font-size: 1.2rem;
+  margin-top: 4vh;
+  text-align: start;
+  color: var(--green);
+  font-size: 1.2rem;
 }
 .tag-wrap {
-    display: flex;
-    flex-direction: row;
-    width: 30vw;
-    flex-wrap: wrap;
+  display: flex;
+  flex-direction: row;
+  width: 30vw;
+  flex-wrap: wrap;
 }
 .tag {
-    margin-right: 0.5vw;
-    color: var(--black);
-    background-color: var(--light-gray-tint);
-    padding : 0.5% 1.5%;
-    margin-bottom: 0.5vw;
-    border-radius: 1vw;
-    transition: all 0.2s;
-    border : 1px solid transparent;
-    cursor: pointer;
-    font-family: var(--font-mono);
+  margin-right: 0.5vw;
+  color: var(--black);
+  background-color: var(--light-gray-tint);
+  padding: 0.5% 1.5%;
+  margin-bottom: 0.5vw;
+  border-radius: 1vw;
+  transition: all 0.2s;
+  border: 1px solid transparent;
+  cursor: pointer;
+  font-family: var(--font-mono);
 }
 
 .tag:hover {
-    background-color: var(--green-tint);
-    color:var(--green); 
-    border : 1px solid var(--green)
+  background-color: var(--green-tint);
+  color: var(--green);
+  border: 1px solid var(--green);
 }
 
-@media screen and (min-width : 1300px) {
-    .img-wrap img {
-        width: 10vw;
-    }
-    .img-wrap {
-        width: 10vw;
-        padding: 1vw;
-        border : 1px solid var(--green);
-        transition: all 0.1s;
-        opacity: 0.7;
-    }
+@media screen and (min-width: 1300px) {
+  .img-wrap img {
+    width: 10vw;
+  }
+  .img-wrap {
+    width: 10vw;
+    padding: 1vw;
+    border: 1px solid var(--green);
+    transition: all 0.1s;
+    opacity: 0.7;
+  }
 }
 
-@media screen and (max-width : 1300px) {
-    .img-wrap img {
-        display: none
-    }
-    .img-wrap {
-        display: none
-    }
+@media screen and (max-width: 1300px) {
+  .img-wrap img {
+    display: none;
+  }
+  .img-wrap {
+    display: none;
+  }
 }
 .img-wrap:hover {
-    width: 10vw;
-    padding: 1vw - 4px;
-    border : 3px solid var(--green);
-    opacity: 1;
+  width: 10vw;
+  padding: 1vw - 4px;
+  border: 3px solid var(--green);
+  opacity: 1;
 }

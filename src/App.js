@@ -27,7 +27,7 @@ function App() {
         <nav className="App-bar">
           <Topbar step={step} />
         </nav>
-        <div id="container">
+        <div>
           <section id="contents">
             <Home step={step} className="content" />
 

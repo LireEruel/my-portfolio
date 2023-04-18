@@ -1,45 +1,45 @@
 #experience {
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-    width: 100%;
-    margin: 10vh 20vw;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  width: 100%;
+  margin: 10% auto;
 }
 
 .title {
-    color : var(--green);
-    font-size: 1.2rem;
-    margin-left: 5px;
-    animation-name: enter;
-    animation-duration: 1s;
-    animation-duration: leaner;
-    animation-delay: 0.2s;
-    width: 100%;
-    text-align: start;
+  color: var(--green);
+  font-size: 1.2rem;
+  margin-left: 5px;
+  animation-name: enter;
+  animation-duration: 1s;
+  animation-duration: leaner;
+  animation-delay: 0.2s;
+  width: 100%;
+  text-align: start;
 }
 
 #experience span {
-    color : var(--gray-tint);
-    font-size: 2rem;
+  color: var(--gray-tint);
+  font-size: 2rem;
 }
 
 #experience p span {
-    color : var(--gray-tint);
-    font-size: 1.5rem;
+  color: var(--gray-tint);
+  font-size: 1.5rem;
 }
 
 #experience p strong {
-    color : var(--gray-tint);
-    font-size: 1.1rem
+  color: var(--gray-tint);
+  font-size: 1.1rem;
 }
 .inner-text {
-    text-align: start;
-    margin-right: 5vw;
+  text-align: start;
+  margin-right: 5vw;
 }
 
 .card-wrap {
-    display: flex;
-    width: 100%;
-    flex-wrap: wrap;
-    justify-content: space-between;
+  display: flex;
+  width: 100%;
+  flex-wrap: wrap;
+  justify-content: space-between;
 }

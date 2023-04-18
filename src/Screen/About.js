@@ -20,7 +20,6 @@ function About() {
       <h1 className="title">
         01. <span>About Me </span>
       </h1>
-      <hr />
       <br />
       <div className="content">
         <div>
