@@ -20,7 +20,7 @@ function Card({ imgUrl, title, content, contribution, stack, notionUrl }) {
       className="card"
     >
       <div className="card" onMouseEnter={flipChange} onClick={openWindow}>
-        <img src={imgUrl}></img>
+        <img src={imgUrl} alt={`${title} title`}></img>
       </div>
       <div className="card" onMouseLeave={flipChange} onClick={openWindow}>
         <div className="card-content">
