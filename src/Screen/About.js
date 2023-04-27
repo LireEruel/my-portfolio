@@ -1,5 +1,4 @@
-import Animation from "./Animation";
-import "../assets/about.css";
+import "../assets/about.scss";
 
 function About() {
   const tags = [
