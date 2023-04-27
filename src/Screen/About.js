@@ -60,7 +60,10 @@ function About() {
         </div>
 
         <div className="img-wrap">
-          <img src={require("../assets/image/who_am_I_logo.png")}></img>
+          <img
+            src={require("../assets/image/who_am_I_logo.png")}
+            alt="profile logo"
+          ></img>
         </div>
       </div>
       {/* <Animation /> */}
