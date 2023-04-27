@@ -44,7 +44,6 @@ function App() {
               {step > 14 ? <Contact step={step} /> : null}
             </AnimationOnScroll>
           </section>
-          <hr />
         </div>
       </div>
       <div id="error-view">
