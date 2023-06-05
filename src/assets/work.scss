@@ -44,10 +44,10 @@ h6 {
       margin-left: 1rem;
       margin-bottom: 1rem;
       transition: all 0.25s;
-
+      width: 56vw;
       .arccodion-header {
         cursor: pointer;
-        width: 56vw;
+
         padding: 1rem;
         .arccodion-arrow {
           position: relative;
@@ -79,6 +79,24 @@ h6 {
         color: var(--gray-tint);
         padding-bottom: 10px;
         line-height: 1.4;
+      }
+      .tag-wrap {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        .tag {
+          background-color: var(--light-gray-tint);
+          border: 1px solid transparent;
+          border-radius: 1vw;
+          color: var(--black);
+          cursor: pointer;
+          font-family: var(--font-mono);
+          margin-bottom: 0.5vw;
+          margin-right: 0.5vw;
+          padding: 0.3% 1%;
+          transition: all 0.2s;
+          font-size: 0.8rem;
+        }
       }
     }
   }
