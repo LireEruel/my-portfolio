@@ -16,6 +16,7 @@ function Experience() {
               content={experience.content}
               contribution={experience.contribution}
               stack={experience.stack}
+              notionUrl={experience.notionUrl}
             />
           );
         })}

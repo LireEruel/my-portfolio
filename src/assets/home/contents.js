@@ -9,6 +9,8 @@ const experiences = [
       "사용자 페이지 및 관리자 페이지 front-end 구현",
     ],
     stack: ["django", "React JS", "Python", "Selenium", "Beautiful Soup"],
+    notionUrl:
+      "https://olivine-country-724.notion.site/First-Line-school-project-1e4d765392de4333b896caaf3233f7bc?pvs=4",
   },
   {
     imgUrl: require("assets/image/bukPagoLogo.png"),
@@ -17,6 +19,8 @@ const experiences = [
       "북파고는 북한어를 남한어로 번역해주는 웹 페이지입니다. 파일번역 및 남북한 단어사전도 제공합니다.",
     contribution: ["데이터 크롤링 및 전처리", "메인페이지 front-end 구현"],
     stack: ["React JS", "React JS", "Python"],
+    notionUrl:
+      "https://olivine-country-724.notion.site/BukPago-school-project-1b7b8d043a0e496292bac544e94766ba?pvs=4",
   },
   {
     imgUrl: require("assets/image/baby_shower_logo.jpg"),
@@ -25,6 +29,8 @@ const experiences = [
       "조카의 돌잔치 초대장을 웹으로 구현하였습니다. 다양한 css 효과를 사용하였으며 간단한 댓글 기능이 포함되었습니다.",
     contribution: ["front-end 구현"],
     stack: ["svelte"],
+    notionUrl:
+      "https://olivine-country-724.notion.site/first-birth-Toy-9f2cf6edd2f54611a5df7d466dc1e833?pvs=4",
   },
 ];
 
