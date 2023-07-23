@@ -1,6 +1,6 @@
-import "../assets/experience.css";
+import "assets/home/experience.css";
 import Card from "./Card";
-import experiences from "../assets/contents";
+import experiences from "assets/home/contents";
 
 function Experience() {
   return (
@@ -16,7 +16,6 @@ function Experience() {
               content={experience.content}
               contribution={experience.contribution}
               stack={experience.stack}
-              notionUrl={experience.notionUrl}
             />
           );
         })}

@@ -1,6 +1,4 @@
-import Snowfall from "react-snowfall";
-import "../assets/tooSmallScreen.css";
-import Animation from "./Animation";
+import "assets/tooSmallScreen.css";
 
 const TooSmallScreen = () => {
   return (

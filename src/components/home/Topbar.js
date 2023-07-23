@@ -1,6 +1,6 @@
 import { Link } from "react-scroll";
-import "../assets/topbar.css";
-import RESUME from "../assets/resume.pdf";
+import "assets/home/topbar.css";
+import RESUME from "assets/resume.pdf";
 function Topbar({ step }) {
   const onClickResume = () => {
     const link = document.createElement("a");

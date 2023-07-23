@@ -1,5 +1,5 @@
 import { MailForm } from "./MailForm";
-import "../assets/contact.css";
+import "assets/home/contact.css";
 import { useState } from "react";
 
 function Contact() {
@@ -32,10 +32,10 @@ function Contact() {
           <p>저와 함께 미래를 그려나갈 멋진 분들의 연락을 기다리고 있습니다.</p>
           <p>jsh001505@naver.com</p>
           <button onClick={onClickGitButton}>
-            <img src={require("../assets/image/git_icon.png")} />
+            <img src={require("assets/image/git_icon.png")} />
           </button>
           <button onClick={onClickVelogButton}>
-            <img src={require("../assets/image/velog_icon.png")} />
+            <img src={require("assets/image/velog_icon.png")} />
           </button>
         </div>
         {open ? null : (

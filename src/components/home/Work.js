@@ -1,5 +1,5 @@
 import { useCallback, useState } from "react";
-import "../assets/work.scss";
+import "assets/home/work.scss";
 
 function Work() {
   const [arccodionIdSet, setArccodionIdSet] = useState(new Set());

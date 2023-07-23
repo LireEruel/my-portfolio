@@ -1,7 +1,7 @@
 import { Link } from "react-scroll";
-import "./assets/home.css";
+import "assets/home/home.css";
 
-function Home({ step }) {
+function Introduce({ step }) {
   return (
     <section id="home">
       {step > 6 ? <h1 className="greeting">Hello, I am </h1> : null}
@@ -43,4 +43,4 @@ function Home({ step }) {
   );
 }
 
-export default Home;
+export default Introduce;

@@ -1,4 +1,4 @@
-import "../assets/about.scss";
+import "assets/home/about.scss";
 
 function About() {
   const tags = [
@@ -60,12 +60,11 @@ function About() {
 
         <div className="img-wrap">
           <img
-            src={require("../assets/image/who_am_I_logo.png")}
+            src={require("assets/image/who_am_I_logo.png")}
             alt="profile logo"
           ></img>
         </div>
       </div>
-      {/* <Animation /> */}
     </section>
   );
 }
