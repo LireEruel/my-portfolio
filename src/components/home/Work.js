@@ -75,7 +75,7 @@ function Work() {
         02. <span>Work</span>
       </h1>
       {workList.map((work, index) => (
-        <div key={index}>
+        <div key={index} className="work-block-wrap">
           <div className="work-block" key={work.id}>
             <h2>
               {work.company} <span>{work.period}</span>
