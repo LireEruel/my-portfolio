@@ -1,24 +1,26 @@
 .card {
-  width: 15vw;
-  height: 15vw;
-  border-radius: 0.5vw;
+  height: 20em;
   font-family: var(--font-mono);
-  overflow: hidden;
-  min-width: 17em;
-  min-height: 17em;
   display: flex;
-  cursor: pointer;
-  margin-top: 10px;
   a {
-    width: 100%;
-    height: 100%;
     img {
-      width: 100%;
-      height: 100%;
-      min-width: 17em;
-      min-height: 17em;
+      --s: 15em;
+      --b: 8px;
+      --g: 14px; /* the gap */
+      --c: #4ecdc4; /* the color */
+      width: var(--s);
+      height: var(--s);
       border-radius: 0.5vw;
       object-fit: cover;
+      aspect-ratio: 1;
+      outline: calc(var(--s) / 2) solid #0009;
+      outline-offset: calc(var(--s) / -2);
+      cursor: pointer;
+      transition: 0.3s;
+    }
+    img:hover {
+      outline: var(--b) solid var(--c);
+      outline-offset: var(--g);
     }
   }
 }
