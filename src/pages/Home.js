@@ -26,16 +26,16 @@ function Home() {
           <Introduce step={step} className="content" />
 
           <AnimationOnScroll className="content" animateIn="animate__fadeIn">
-            {step > 11 ? <About step={step} /> : null}
+            <About step={step} />
           </AnimationOnScroll>
           <AnimationOnScroll className="content" animateIn="animate__fadeIn">
-            {step > 12 ? <Work step={step} /> : null}
+            <Work step={step} />
           </AnimationOnScroll>
           <AnimationOnScroll className="content" animateIn="animate__fadeIn">
-            {step > 13 ? <Experience step={step} /> : null}
+            <Experience step={step} />
           </AnimationOnScroll>
           <AnimationOnScroll className="content" animateIn="animate__fadeIn">
-            {step > 14 ? <Contact step={step} /> : null}
+            <Contact step={step} />
           </AnimationOnScroll>
         </section>
       </div>

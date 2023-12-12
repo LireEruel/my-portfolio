@@ -3,6 +3,7 @@
   align-items: flex-start;
   flex-direction: column;
   margin-bottom: 22vh;
+  min-height: 80vh;
 }
 
 .greeting {
