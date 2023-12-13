@@ -12,7 +12,7 @@ function App() {
       <div id="default-view">
         <BrowserRouter>
           <Routes>
-            <Route path="/my-portfolio" element={<Home />}></Route>
+            <Route path="/" element={<Home />}></Route>
           </Routes>
         </BrowserRouter>
       </div>
