@@ -53,17 +53,40 @@ function Work() {
           id: "2-1",
           name: "관계 추출 모델 관리 도구 개발",
           period: "22.10 ~ 23.02",
-          tech_stack: ["Vue.js", "Next.js", "REST API"],
+          tech_stack: ["Vue.js", "TypeScript", "Ant Design Vue", "SCSS"],
           content:
-            "경제 서비스에 사용되는 관계 추출 모델 관리 도구를 개발하였습니다. Closed IE, Open IE 등 정보 추출 방법에 따른 관계 추출 모델을 효과적으로 관리할 수 있도록 관계 추출 결과 시각화 및 성능 평가 기능을 개발하였습니다.",
+            "Closed IE, Open IE 등 정보 추출 방법에 따른 관계 추출 모델을 효과적으로 관리할 수 있도록 관계 추출 결과 시각화 및 성능 평가 기능을 가진 관리도구를 개발하였습니다.모델의 결과를 효과적으로 시각화하기 위해서는 모델에 대한 이해가 선행되어야 한다 판단하였습니다.인터넷 자료를 활용하여 모델이 관계 추출 하는 방법과 필요한 이유 등을 이해한 뒤, 그 내용을 팀원분께 설명하여 정확히 이해한 것이 맞는지 확인 받았습니다. 그리고 이해한 내용을 바탕으로 UX를 설계하였습니다. 초기에는 대용량 데이터를 한번에 조회하였기에 속도가 느렸습니다. 이를 효율적으로 처리할 수 있도록 페이징 처리를 추가 하여 조회 속도를 약 80% 개선하였습니다. Vue.js와 TypeScript에 대해 모르는 상태에서 시작하였지만, 공식문서로 빠르게 학습하여 문제없이 프로젝트 진행을 할 수 있었습니다",
         },
         {
           id: "2-2",
-          name: "클러스터링 도델 모니터링 도구 개발",
+          name: "클러스터링 모델 모니터링 도구 개발",
           period: "22.12 ~ 23.03",
-          tech_stack: ["Vue.js", "TypeScript", "REST API"],
+          tech_stack: ["Vue.js", "TypeScript", "Ant Design Vue", "SCSS"],
           content:
-            "실시간 뉴스 데이터들을 클러스터링 한 결과를 모니터링하는 도구를 개발하였습니다. 무한 스크롤을 활용하여 UX를 좋게 하고 대용량 데이터의 효과적인 처리를 구현하였습니다.",
+            "기존에 크러스터링 모델 모니터링 도구가 있었지만, 연구원들이 사용하기에 불편하여 재개발하였습니다. 먼저 기존 서비스의 UX가 좋지않은 이유를 파악하였습니다. 연구원들의 업무 방식을 분석하기 위해 업무 환경을 관찰하고, 기존 서비스에 대한 피드백을 들었습니다. 그 결과 데이터가 한 눈에 보여야 하고, 모니터링의 피로도를 낮춰야 한다는 인사이트를 얻었습니다. 이를 바탕으로 UI를 설계시 대용량 데이터가 한 눈에 보일 수 있도록 여백을 최소화하고, 한 화면에 모든 데이터가 보이도록 하였습니다. 그리고 클릭없이 많은 양을 조회할 수 있도록 페이징 처리 방식을 페이지네이션에서 무한 스크롤로 변경하였습니다. 대용량 데이터를 다루는 서비스에 무한 스크롤 방식은 성능 문제를 야기할 수 있지만, 이벤트를 최적화하고 가상 스크롤을 구현하여 성능 문제를 해결하였습니다.",
+        },
+      ],
+    },
+    {
+      id: 3,
+      company: "[교육] 삼성 SW 아카데미",
+      period: "23.07 ~ 현재",
+      projects: [
+        {
+          id: "3-1",
+          name: "공공데이터를 활용한 EnjoyTrip 서비스",
+          period: "23.11 ~ 23.11",
+          tech_stack: [
+            "Vue.js",
+            "TypeScript",
+            "REST API",
+            "Stomp",
+            "Ant Design Vue",
+            "SCSS",
+          ],
+          content:
+            "공공데이터를 활용한 여행 정보 서비스를 개발하였습니다. 메인 기능은 여행지 조회, 여행 계획 생성 및 공유 등이 있습니다. Stomp를 활용하여 실시간 채팅 기능도 개발하였습니다. 프로젝트가 좋은 평가를 받아, 1학기 최우수상(1등)을 수상하게 되었습니다.",
+          viewUrl: "https://youtu.be/3uvj_LhYi38",
         },
       ],
     },
@@ -72,7 +95,7 @@ function Work() {
   return (
     <section id="work">
       <h1 className="title">
-        02. <span>Work</span>
+        02. <span>Experience</span>
       </h1>
       {workList.map((work, index) => (
         <div key={index} className="work-block-wrap">
@@ -106,6 +129,21 @@ function Work() {
                         </p>
                       ))}
                     </div>
+                    {project.viewUrl ? (
+                      <a
+                        className="view-link"
+                        href={project.viewUrl}
+                        target="blank"
+                      >
+                        play Demo{" "}
+                        <img
+                          src="https://raw.githubusercontent.com/Tarikul-Islam-Anik/Animated-Fluent-Emojis/master/Emojis/Symbols/Chequered%20Flag.png"
+                          alt="Chequered Flag"
+                          width="25"
+                          height="25"
+                        />
+                      </a>
+                    ) : null}
                     <p className="work-info">{project.content}</p>
                   </div>
                 ) : null}

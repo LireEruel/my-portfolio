@@ -100,6 +100,33 @@ h6 {
           font-size: 0.8rem;
         }
       }
+      .view-link {
+        color: var(--green);
+        font-family: var(--font-mono);
+        font-size: 1.2rem;
+        margin-left: 1rem;
+        text-decoration: none;
+        display: flex;
+        align-items: center;
+        gap: 1rem;
+        padding: 1rem 0;
+        &::after {
+          position: relative;
+          content: "";
+          width: 0;
+          height: 5px;
+          top: 15px;
+          left: -10.3rem;
+          background-color: #f57dff;
+          transition: all 0.2s linear;
+        }
+        &:hover {
+          font-weight: bold;
+          &::after {
+            width: 10rem;
+          }
+        }
+      }
     }
   }
   hr {
