@@ -1,5 +1,14 @@
 const experiences = [
   {
+    imgUrl: require("assets/image/EnjoyTrip_Logo.png"),
+    title: "EnjoyTrip",
+    content:
+      "공공데이터를 활용한 여행 정보 서비스를 개발하였습니다. 메인 기능은 여행지 조회, 여행 계획 생성 및 공유 등이 있습니다. Stomp를 활용하여 실시간 채팅 기능도 개발하였습니다. 프로젝트가 좋은 평가를 받아, 1학기 최우수상(1등)을 수상하게 되었습니다.",
+    contribution: ["front-end 구현"],
+    stack: ["vue"],
+    notionUrl: "https://youtu.be/3uvj_LhYi38",
+  },
+  {
     imgUrl: require("assets/image/first_line_logo.png"),
     title: "첫 줄",
     content:
@@ -21,16 +30,6 @@ const experiences = [
     stack: ["React JS", "React JS", "Python"],
     notionUrl:
       "https://olivine-country-724.notion.site/BukPago-school-project-1b7b8d043a0e496292bac544e94766ba?pvs=4",
-  },
-  {
-    imgUrl: require("assets/image/baby_shower_logo.jpg"),
-    title: "돌잔치 초대장",
-    content:
-      "조카의 돌잔치 초대장을 웹으로 구현하였습니다. 다양한 css 효과를 사용하였으며 간단한 댓글 기능이 포함되었습니다.",
-    contribution: ["front-end 구현"],
-    stack: ["svelte"],
-    notionUrl:
-      "https://olivine-country-724.notion.site/first-birth-Toy-9f2cf6edd2f54611a5df7d466dc1e833?pvs=4",
   },
 ];
 
